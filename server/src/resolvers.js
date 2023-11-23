@@ -5,6 +5,11 @@ const resolvers = {
       return dataSources.trackAPI.getTrackForHome();
     },
   },
+  Track: {
+    author: ({ authorId }, _, { dataSources }) => {
+      return dataSources.trackAPI.getAuthor(authorId);
+    },
+  },
 };
 
 module.exports = resolvers;
