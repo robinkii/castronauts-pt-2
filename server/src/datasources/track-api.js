@@ -1,6 +1,6 @@
-const { RestDataSource } = require('apollo-datasource-rest');
+const { RESTDataSource } = require('apollo-datasource-rest');
 
-class TrackAPI extends RestDataSource {
+class TrackAPI extends RESTDataSource {
   baseURL = 'https://odyssey-lift-off-rest-api.herokuapp.com/';
 
   getTracksForHome() {
